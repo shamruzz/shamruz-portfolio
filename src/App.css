@@ -206,7 +206,7 @@ body {
   width: 100%;
   height: 110%;
   object-fit: cover;
-  object-position: left center;
+  object-position: center center;
   filter: sepia(20%) brightness(0.88) contrast(1.05);
 }
 
@@ -221,6 +221,17 @@ body {
     linear-gradient(to top,
       rgba(26,15,10,0.3) 0%,
       transparent 40%);
+}
+
+@media (max-width: 768px) {
+  .hero-vignette {
+    background: linear-gradient(
+      to bottom,
+      rgba(26,15,10,0.1) 0%,
+      rgba(245,240,232,0.75) 60%,
+      rgba(245,240,232,0.95) 100%
+    );
+  }
 }
 
 .hero-body {
