@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import heroImg from './assets/hero.png'
+import logoImg from './assets/logo.png'
 import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md'
 import './App.css'
@@ -66,7 +67,9 @@ export default function App() {
       {/* Navigation */}
       <nav className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
         <div className="nav-inner">
-          <button className="logo" onClick={() => scrollTo('home')}>Hello There</button>
+          <button className="logo-btn" onClick={() => scrollTo('home')}>
+          <img src={logoImg} alt="Shamruz" className="logo-img" />
+          </button>
 
           <div className="nav-links-desktop">
             {navLinks.map(item => (
