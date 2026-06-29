@@ -161,9 +161,9 @@ export default function App() {
 
         <motion.div className="about-grid" variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.15 }}>
           {[
-            { num: '01', title: 'Fleet Operations', text: 'At RNB Global, I coordinate dispatcher operations managing vehicle fleets for corporate and business clients. I bridge internal teams and external stakeholders — keeping operations smooth, communications clear, and everything running on time.' },
-            { num: '02', title: 'Always Learning', text: 'Currently completing my Higher National Diploma (HND) while working full-time at RNB Global. The plan is to move into a full degree — combining hands-on operations experience with deeper business and technology knowledge.' },
-            { num: '03', title: 'The Approach', text: "Balancing work and study has shaped how I think — efficient, focused, results-driven. I don't overcomplicate things. I show up, I execute, and I make sure the job gets done right." },
+            { num: '01', title: 'Fleet Operations', text: 'At RNB Global, I coordinate dispatcher operations managing vehicle fleets for corporate and business clients. I bridge internal teams and external stakeholders keeping operations smooth, communications clear, and everything running on time.' },
+            { num: '02', title: 'Always Learning', text: 'Currently completing my Higher National Diploma (HND) while working full-time at RNB Global. The plan is to move into a full degree combining hands-on operations experience with deeper business and technology knowledge.' },
+            { num: '03', title: 'The Approach', text: "Balancing work and study has shaped how I think efficient, focused, results-driven. I don't overcomplicate things. I show up, I execute, and I make sure the job gets done right." },
           ].map((card, i) => (
             <motion.div key={i} variants={fadeUp} custom={i} className="about-card" whileHover={{ y: -6 }}>
               <div className="about-card-num">{card.num}</div>
@@ -187,7 +187,7 @@ export default function App() {
             {
               role: 'Fleet Coordinator',
               company: 'RNB Global • Dispatcher Team',
-              period: '2025 — Present',
+              period: '2025 Present',
               location: 'Sri Lanka',
               points: [
                 'Coordinate dispatcher operations managing multiple vehicle fleets',
@@ -200,7 +200,7 @@ export default function App() {
             {
               role: 'Cashier',
               company: 'Lovers Point',
-              period: '2024 — 2025',
+              period: '2024 2025',
               location: 'Sri Lanka',
               points: [
                 'Managed daily cash transactions accurately and efficiently',
@@ -293,9 +293,9 @@ export default function App() {
 
         <motion.div className="interests-grid" variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.15 }}>
           {[
-            { icon: '🏀', title: 'Basketball', text: "Basketball isn't just a sport — it's a mindset. The game teaches you to read situations fast, communicate under pressure, and trust your team. The same principles I bring to fleet coordination every day." },
-            { icon: '📡', title: 'Technology', text: 'Genuinely curious about how things work — from AWS infrastructure to React development. Building this portfolio was part of that journey. Tech is the future of operations and I\'m staying ahead of it.' },
-            { icon: '📈', title: 'Growth', text: "Working full-time and studying HND simultaneously isn't easy. But growth never is. I'm committed to becoming the best version of myself — professionally and personally." },
+            { icon: '🏀', title: 'Basketball', text: "Basketball isn't just a sport it's a mindset. The game teaches you to read situations fast, communicate under pressure, and trust your team. The same principles I bring to fleet coordination every day." },
+            { icon: '📡', title: 'Technology', text: 'Genuinely curious about how things work from AWS infrastructure to React development. Building this portfolio was part of that journey. Tech is the future of operations and I\'m staying ahead of it.' },
+            { icon: '📈', title: 'Growth', text: "Working full-time and studying HND simultaneously isn't easy. But growth never is. I'm committed to becoming the best version of myself professionally and personally." },
           ].map((item, i) => (
             <motion.div key={i} variants={fadeUp} custom={i} className="interest-card" whileHover={{ y: -6 }}>
               <div className="interest-icon">{item.icon}</div>
@@ -318,7 +318,7 @@ export default function App() {
           <motion.div variants={fadeUp} className="contact-info">
             <p className="contact-intro">
               Open to opportunities in fleet management, operations leadership, and tech integration.
-              Whether it's a role, a collaboration, or just a conversation — I'm here.
+              Whether it's a role, a collaboration, or just a conversation I'm here.
             </p>
             <div className="contact-links">
               {[
